@@ -6,6 +6,8 @@ contributes:
     common:
       filters:
         - jasa.lua
+      journal:
+        blinded: false
     pdf:
       include-in-header:
         - partials/_include-in-header.tex

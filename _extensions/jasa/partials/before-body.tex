@@ -1,40 +1,40 @@
+
+
 \def\spacingset#1{\renewcommand{\baselinestretch}%
 {#1}\small\normalsize} \spacingset{1}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\if1\blind
-{
-  \title{\bf $title$}
-  \author{Author 1\thanks{
-    The authors gratefully acknowledge \textit{please remember to list all relevant funding sources in the unblinded version}}\hspace{.2cm}\\
-    Department of YYY, University of XXX\\
-    and \\
-    Author 2 \\
-    Department of ZZZ, University of WWW}
-  \maketitle
-} \fi
-
-\if0\blind
-{
-  \bigskip
-  \bigskip
-  \bigskip
-  \begin{center}
-    {\LARGE\bf Title}
+$if(date)$
+\date{$date$}
+$endif$
+$if(journal.blinded)$
+\bigskip
+\bigskip
+\bigskip
+\begin{center}
+  {\LARGE\bf Title}
 \end{center}
-  \medskip
-} \fi
-
+\medskip
+$else$
+\title{\bf $title$}
+\author{
+$for(by-author)$
+$it.name.literal$$if(it.acknowledgements)$\thanks{$it.acknowledgements$}$endif$\\
+$for(it.affiliations)$$if(it.department)$$it.department$$if(it.name)$, $endif$$endif$$if(it.name)$$it.name$$endif$$if(it.department)$\\$elseif(it.name)$\\$endif$
+$endfor$$sep$and\\$endfor$}
+\maketitle
+$endif$
 \bigskip
 \begin{abstract}
-The text of your abstract. 200 or fewer words.
+$abstract$
 \end{abstract}
 
 \noindent%
-{\it Keywords:}  3 to 6 keywords, that do not appear in the title
+{\it Keywords:} $keywords$
 \vfill
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
+
