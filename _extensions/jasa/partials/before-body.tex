@@ -1,0 +1,40 @@
+\def\spacingset#1{\renewcommand{\baselinestretch}%
+{#1}\small\normalsize} \spacingset{1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\if1\blind
+{
+  \title{\bf $title$}
+  \author{Author 1\thanks{
+    The authors gratefully acknowledge \textit{please remember to list all relevant funding sources in the unblinded version}}\hspace{.2cm}\\
+    Department of YYY, University of XXX\\
+    and \\
+    Author 2 \\
+    Department of ZZZ, University of WWW}
+  \maketitle
+} \fi
+
+\if0\blind
+{
+  \bigskip
+  \bigskip
+  \bigskip
+  \begin{center}
+    {\LARGE\bf Title}
+\end{center}
+  \medskip
+} \fi
+
+\bigskip
+\begin{abstract}
+The text of your abstract. 200 or fewer words.
+\end{abstract}
+
+\noindent%
+{\it Keywords:}  3 to 6 keywords, that do not appear in the title
+\vfill
+
+\newpage
+\spacingset{1.9} % DON'T change the spacing!

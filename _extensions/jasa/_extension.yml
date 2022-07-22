@@ -1,0 +1,30 @@
+title: Journal of the American Statistical Association
+author: Charles Teague
+version: 0.9.0
+contributes:
+  formats:
+    common:
+      filters:
+        - jasa.lua
+    pdf:
+      include-in-header:
+        - partials/_include-in-header.tex
+      documentclass: article
+      classoption:
+        - 12pt
+      # This format use a bst file with natbib
+      biblio-style: agsm
+      cite-method: natbib
+      format-resources:
+        - agsm.bst
+      template-partials:
+        # Add here the partials your format is using
+        - "partials/title.tex"
+        - "partials/before-body.tex"
+    html:
+      # define default configuration for the html version of your format
+      number-sections: true
+      toc: true
+      theme: custom.scss
+      # Use a CSL file to style (https://www.zotero.org/styles/)
+      csl: american-statistical-association.csl
