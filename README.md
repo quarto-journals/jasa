@@ -1,21 +1,12 @@
-# Article Format Template (AFT)
+# Journal of the American Statistical Association (JASA)
 
-<!-- REMOVE THIS IN YOUR FORMAT TEMPLATE -->
-> Template for creating a new journal article format for Quarto. 
->
-> This repository is a [Github Repository Template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) that you should use as a starter to create a new extension format. Click on the "Use this template" button at the top !
->
-> See information about how-to use this repo template inside the template file or its rendered version at <https://quarto-journals.github.io/aft/>
-
-<!-- ALL THE BELOW SHOULD BE IN YOUR README -->
-
-This is a Quarto template that assists you in creating a manuscript for Article Format Template journals. You can learn more about ...
+This is a Quarto template that assists you in creating a manuscript for Journals for the American Statistical Association. You can learn more about the Journal of the American Statistical Association at <https://www.tandfonline.com/journals/uasa20>.
 
 ## Creating a New Article
 
-You can use this as a template to create an article for an AFT journal. To do this, use the following command:
+You can use this as a template to create an article for a JASA journal. To do this, use the following command:
 
-```quarto use template quarto-journals/article-format-template```
+```quarto use template quarto-journals/jasa```
 
 This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
 
@@ -23,21 +14,21 @@ This will install the extension and create an example qmd file and bibiography t
 
 You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
 
-```quarto install extension quarto-journals/article-format-template```
+```quarto install extension quarto-journals/jasa```
 
 ## Usage 
 
-To use the format, you can use the format names `aft-pdf` and `aft-html`. For example:
+To use the format, you can use the format names `jasa-pdf` and `jasa-html`. For example:
 
-```quarto render article.qmd --to aft-pdf```
+```quarto render article.qmd --to jasa-pdf```
 
 or in your document yaml
 
 ```yaml
 format:
   pdf: default
-  aft-pdf:
+  jasa-pdf:
     keep-tex: true    
 ```
 
-You can view a preview of the rendered template at <https://quarto-journals.github.io/aft/>.
+You can view a preview of the rendered template at <https://quarto-journals.github.io/jasa/>.
