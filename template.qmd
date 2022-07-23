@@ -1,12 +1,14 @@
 ---
-title: "Sample JASA document to use as template"
+title: "Title"
 format:
   jasa-pdf:
+    geometry: 
+      - showframe
     keep-tex: true  
     journal:
       blinded: false
   jasa-html: default
-date: 1/1/2002
+date: last-modified
 author:
   - name: Author 1
     acknowledgements: | 
@@ -20,7 +22,9 @@ author:
         department: Department of ZZZ
 abstract: |
   The text of your abstract. 200 or fewer words.
-keywords: ["3 to 6 keywords", "That do not appear in title"]
+keywords:
+  - 3 to 6 keywords
+  - that do not appear in the title
 bibliography: bibliography.bib  
 ---
 

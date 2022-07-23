@@ -28,12 +28,11 @@ local processSupplementary = function(el)
 
     if quarto.doc.isFormat("pdf") then
       local content = el.content
-      quarto.utils.dump(content)
       local titleText = pandoc.write(pandoc.Pandoc(pandoc.Plain(content)), 'latex')
       local rendered = {
         pandoc.RawInline("latex", "\\bigskip\n"),
         pandoc.RawInline("latex", "\\begin{center}\n"),
-        pandoc.RawInline("latex", "{" .. titleText .. "}\n"),
+        pandoc.RawInline("latex", "{\\large\\bf " .. titleText .. "}\n"),
         pandoc.RawInline("latex", "\\end{center}"),
       }
       return pandoc.Div(rendered, el.attr)

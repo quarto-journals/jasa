@@ -10,13 +10,16 @@ $if(date)$
 \date{$date$}
 $endif$
 $if(journal.blinded)$
+\spacingset{.8}
 \bigskip
 \bigskip
 \bigskip
 \begin{center}
   {\LARGE\bf Title}
 \end{center}
-\medskip
+\smallskip
+\bigskip
+\spacingset{1}
 $else$
 \title{\bf $title$}
 \author{
@@ -26,14 +29,18 @@ $for(it.affiliations)$$if(it.department)$$it.department$$if(it.name)$, $endif$$e
 $endfor$$sep$and\\$endfor$}
 \maketitle
 $endif$
+
+\bigskip
 \bigskip
 \begin{abstract}
 $abstract$
 \end{abstract}
 
+$if(keywords)$
 \noindent%
-{\it Keywords:} $keywords$
+{\it Keywords:} $for(keywords)$$it$$sep$, $endfor$
 \vfill
+$endif$
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
