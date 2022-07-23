@@ -211,3 +211,6 @@ HIV data set:
 
 :   Data set used in the illustration of MYNEW method in Section~ 3.2. (.txt file)
 
+## BibTeX 
+
+We hope you've chosen to use BibTeX! If you have, please feel free to use the package natbib with any bibliography style you're comfortable with. The .bst file agsm has been included here for your convenience. 
