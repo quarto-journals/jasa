@@ -2,8 +2,6 @@
 title: "Title"
 format:
   jasa-pdf:
-    geometry: 
-      - showframe
     keep-tex: true  
     journal:
       blinded: false
