@@ -28,7 +28,8 @@ local processSupplementary = function(el)
 
     if quarto.doc.isFormat("pdf") then
       local content = el.content
-      local titleText = pandoc.write(pandoc.Pandoc(pandoc.Plain(content)), 'latex')
+      local titleText = pandoc.utils.stringify(content);
+      titleText = text.upper(titleText);
       local rendered = {
         pandoc.RawInline("latex", "\\bigskip\n"),
         pandoc.RawInline("latex", "\\begin{center}\n"),
@@ -36,6 +37,11 @@ local processSupplementary = function(el)
         pandoc.RawInline("latex", "\\end{center}"),
       }
       return pandoc.Div(rendered, el.attr)
+    elseif quarto.doc.isFormat("html") then
+      local content = el.content
+      local titleText = pandoc.write(pandoc.Pandoc(pandoc.Plain(content)), 'html')
+      local heading = pandoc.Header(2, content, { el.attr.identifier, {"supplementary", "unnumbered"}, el.attr.attributes} )
+      return heading
     end
   end
 end

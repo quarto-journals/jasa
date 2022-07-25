@@ -196,7 +196,7 @@ The quick brown fox jumped over the lazy dog.
 
 ## Conclusion {#sec-conc}
 
-## SUPPLEMENTARY MATERIAL {.supplementary}
+## Supplementary Material {.supplementary}
 
 Title:
 
