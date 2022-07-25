@@ -29,7 +29,7 @@ local processSupplementary = function(el)
     if quarto.doc.isFormat("pdf") then
       local content = el.content
       local titleText = pandoc.utils.stringify(content);
-      titleText = text.upper(titleText);
+      titleText = pandoc.text.upper(titleText);
       local rendered = {
         pandoc.RawInline("latex", "\\bigskip\n"),
         pandoc.RawInline("latex", "\\begin{center}\n"),
