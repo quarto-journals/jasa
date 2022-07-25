@@ -41,9 +41,7 @@ around, letter size paper.
 
 : D-optimality values for design X under five different scenarios. {#tbl-one}
 
-- Note that figures and tables (such as @fig-first and
-@tbl-one) should appear in the paper, not at the end or
-in separate files.
+- Note that figures and tables (such as @fig-first and @tbl-one) should appear in the paper, not at the end or in separate files.
 - In document front matter, you may set the key `blinded` under a `journal` key to hide the authors and acknowledgements, producing the required blinded version.
 - Remember that in the blind version, you should not identify authors indirectly in the text.  That is, don't say "In Smith et. al.  (2009) we showed that ...". Instead, say "Smith et. al. (2009) showed that ...".
 - These points are only intended to remind you of some requirements.
