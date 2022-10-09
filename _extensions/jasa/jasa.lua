@@ -5,7 +5,7 @@ local kHeightAttr = 'add-textheight'
 local text_height_div = function(el)
   for k,v in pairs(el.attr.attributes) do
     if k == kHeightAttr then
-      if quarto.doc.isFormat("pdf") then
+      if quarto.doc.is_format("pdf") then
         local heightAdjust = pandoc.utils.stringify(v)
         local endHeight = '-' .. heightAdjust
         if heightAdjust:sub(1,1) == "-" then
@@ -26,7 +26,7 @@ end
 local processSupplementary = function(el) 
   if el.attr.classes:includes('supplementary') then
 
-    if quarto.doc.isFormat("pdf") then
+    if quarto.doc.is_format("pdf") then
       local content = el.content
       local titleText = pandoc.utils.stringify(content);
       titleText = pandoc.text.upper(titleText);
@@ -37,7 +37,7 @@ local processSupplementary = function(el)
         pandoc.RawInline("latex", "\\end{center}"),
       }
       return pandoc.Div(rendered, el.attr)
-    elseif quarto.doc.isFormat("html") then
+    elseif quarto.doc.is_format("html") then
       local content = el.content
       local titleText = pandoc.write(pandoc.Pandoc(pandoc.Plain(content)), 'html')
       local heading = pandoc.Header(2, content, { el.attr.identifier, {"supplementary", "unnumbered"}, el.attr.attributes} )
