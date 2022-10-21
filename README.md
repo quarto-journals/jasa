@@ -26,7 +26,6 @@ or in your document yaml
 
 ```yaml
 format:
-  pdf: default
   jasa-pdf:
     keep-tex: true    
 ```
