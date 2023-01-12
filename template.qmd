@@ -232,5 +232,5 @@ HIV data set:
 
 ## BibTeX 
 
-We hope you've chosen to use BibTeX!
+We encourage you to use BibTeX.
 If you have, please feel free to use the package natbib with any bibliography style you're comfortable with. The .bst file agsm has been included here for your convenience. 
