@@ -31,19 +31,6 @@ bibliography: bibliography.bib
 Body of paper.
 Margins in this document are roughly 0.75 inches all around, letter size paper.
 
-```{r}
-#| label: fig-scatter1
-#| echo: false
-#| message: false
-#| warning: false
-#| fig-cap: A not very interesting scatterplot
-library(tidyverse)
-ds <- tibble(x = 1:5, y = 5:1)
-ggplot(ds, aes(x = x, y = y)) + geom_point()
-```
-
-@fig-scatter1 displays a non-stochastic relationship.
-
 
 ![Consistency comparison in fitting surrogate model in the tidal power example.](fig1.pdf){#fig-first width=3in}
 
@@ -228,7 +215,7 @@ R-package for  MYNEW routine:
 
 HIV data set:
 
-:   Data set used in the illustration of MYNEW method in Section~ 3.2. (.txt file)
+:   Data set used in the illustration of MYNEW method in @sec-verify (.txt file).
 
 ## BibTeX 
 
