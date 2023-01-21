@@ -1,10 +1,24 @@
-# Journal of the American Statistical Association (JASA)
+# Journals of the American Statistical Association (JASA)
 
-This is a Quarto template that assists you in creating a manuscript for Journals for the American Statistical Association. You can learn more about the Journal of the American Statistical Association at <https://www.tandfonline.com/journals/uasa20>.
+This is a Quarto template that assists you in creating a manuscript for Journals for the American Statistical Association (ASA).
+ASA journals which use this template include:
+
+- Journal of the American Statistical Association
+- The American Statistician
+- Journal of Agricultural, Biological, and Environmental Statistics
+- Journal of Business & Economic Statistics
+- Journal of Computational and Graphical Statistics
+- Journal of Nonparametric Statistics
+- Journal of Statistics and Data Science Education 
+- Statistics in Biopharmaceutical Research
+- Statistics and Public Policy
+- Technometrics
+
+You can learn more about the journals of the American Statistical Association at <https://www.amstat.org/publications/journals>.
 
 ## Creating a New Article
 
-You can use this as a template to create an article for a JASA journal. To do this, use the following command:
+You can use this as a template to create an article for an ASA journal. To do this, use the following command:
 
 ```quarto use template quarto-journals/jasa```
 
